@@ -393,7 +393,7 @@ export default {
       vm.selectedRangoEdad = objEdadSexo.edad.nombre;
       axios
         .get(
-          "https://backnutriollacicd.herokuapp.com/api/consumo-estimado",
+          "https://backnutriolla.herokuapp.com/api/consumo-estimado",
           {
             params: {
               idSexo: sexo,
@@ -608,7 +608,7 @@ export default {
     // });
 
     axios
-      .get("https://backnutriollacicd.herokuapp.com/api/alimentos")
+      .get("https://backnutriolla.herokuapp.com/api/alimentos")
       .then(function (res) {
         self.alimentos = res.data.data;
       });
