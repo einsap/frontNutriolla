@@ -136,6 +136,7 @@ export default {
         self.loadingEdad = false;
       })
       .catch(function(err) {
+        
         alert(err);
       });
   }
